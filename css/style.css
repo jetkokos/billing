@@ -8,6 +8,7 @@ html {
 	flex-direction: column;
 	font-family: Lato, Arial, sans-serif;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,15 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.main-container {
+	background-position: top 100% center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	box-sizing: border-box;
 }
 
@@ -33,6 +43,7 @@ a {
 	font-weight: 800;
 }
 
+
 .main {
 	margin: 0;
 	padding: 0;
@@ -45,7 +56,7 @@ a {
 	align-items: flex-start;
 }
 
-.main .button {
+.button {
 	display: block;
 	margin: 10px 10px 0 0;
 	width: 253px;
@@ -61,21 +72,37 @@ a {
 	font-weight: 800;
 	text-align: center;
 	vertical-align: middle;
+	outline: none;
 }
 
-.main .button-gradient {
+.button:hover {
+	color: rgb(114,239,212);
+	cursor: pointer;
+}
+
+.button:active {
+	color: rgb(51,153,239);
+}
+
+.button-gradient {
 	border: 1px solid grey;
+	color: white;
 	background-image: linear-gradient(90deg, #3195f0 0%, #78f7d0 100%);
 }
 
-.main-container {
-	width: 100%;
-	background-position: top 100% center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	box-sizing: border-box;
+.button-gradient:hover {
+	border: 1px solid grey;
+	color: white;
+	background-image: none;
+	background-color: #3398ef;
 }
+.button-gradient:active {
+	border: 1px solid grey;
+	color: white;
+	background-image: none;
+	background-color: #1b85df;
+}
+
 
 
 .first-screen {
@@ -122,11 +149,6 @@ a {
 	justify-content: center;
 	align-items: center;
 }
-
-
-
-
-
 
 h1, h2 {
 	margin-bottom: 15px;
@@ -175,7 +197,6 @@ h1, h2 {
 
 .how {
 	width: 100%;
-	height: 733px;
 	background-color: #141636;
 	display: flex;
 	flex-wrap: wrap;
@@ -183,6 +204,8 @@ h1, h2 {
 }
 
 .how h2 {
+	margin-top: 165px;
+	margin-bottom: 85px;
 	width: 100%;
 	text-align: center;
 }
@@ -190,6 +213,7 @@ h1, h2 {
 .steps {
 	width: 33%;
 	max-width: 400px;
+	min-width: 249px;
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
@@ -205,6 +229,10 @@ h1, h2 {
 	margin-bottom: 5px;
 }
 
+.steps p:last-child {
+	margin-bottom: 170px;
+}
+
 .steps img {
 	align-self: center;
 	margin-bottom: 25px;
@@ -213,14 +241,14 @@ h1, h2 {
 
 .how-line {
 	position: relative;
-	top: 440px;
+	width: 90%;
+	top: 395px;
 	height: 4px;
 
 }
 
 .prices {
 	width: 100%;
-	height: 733px;
 	background-color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
@@ -230,7 +258,7 @@ h1, h2 {
 }
 
 .prices h2 {
-	margin: 0;
+	margin: 140px 0;
 	padding: 0;
 	width: 100%;
 	text-align: center;
@@ -269,6 +297,7 @@ h1, h2 {
 .tarif {
 	width: 33%;
 	max-width: 400px;
+	min-width: 249px;
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
@@ -277,11 +306,11 @@ h1, h2 {
 	color: rgb(73,86,103);
 	font-family: "Lato";
 	text-align: center;
-
 }
 
 .prices .button {
 	margin-top: 35px;
+	margin-bottom: 200px;
 	width: 115px;
 	border-radius: 16px;
 	background-color: #ffffff;
@@ -295,39 +324,126 @@ h1, h2 {
 	font-family: "Lato";
 	font-weight: 800;
 	text-align: center;
+	
 }
 
+.prices .button:hover {
+	text-decoration: underline;
+}
+
+.beta {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #293282;
+	background: url(../img/bg_beta.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+}
+
+.beta-wrapper {
+	margin: 150px 0 215px;
+	width: 100vw;
+	max-width: 1400px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: flex-start;
 
 
+}
 
+.beta-wrapper h2 {
+	text-transform: uppercase;
+	padding: 15px;
+	margin-top: 5px;
+}
+.beta-wrapper h2:nth-child(2)  {
+	color: #72eed4;
+}
 
+.beta-wrapper p {
+	padding: 15px;
+	font-size: 27px;
+	letter-spacing: 1px;
+	line-height: 55px;
+	color: rgb(255,255,255);
+	font-family: "Lato";
+	font-weight: bold;
+	text-align: left;
+}
 
+.form {
+	padding: 15px;
+	display: flex;
+	justify-content: left;
+}
 
+.form input {
+	padding-left: 30px;
+	margin-right: 15px;
+	margin-bottom: 50px;
+	width: 356px;
+	height: 57px;
+	border-radius: 28px;
+	color: rgb(105,100,218);
+	background-color: #26286e;
+	border: 1px solid #6963d9;
+	margin: 10px 10px 0 0;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 49px;
+	color: rgb(117,243,210);
+	font-family: "Lato";
+	font-weight: 800;
+	text-align: left;
+	vertical-align: middle;
+	outline: none;
+}
 
+.form input:focus {
+	border: 1px solid #75f3d1;
+}
 
+.form input::placeholder {
+	color: rgb(105,100,218);
 
-
-
+}
 
 
 
 .footer {
-	height: 100px;
+	min-height: 100px;
 	background: #191b42;
-	width: 100%;
-	min-width: 750px;
+	width: 100vw;
 	color: rgb(114,156,198);
-	margin: auto;
-	padding: 15px;
+	padding: 15px 0 15px 0px;
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.wrapper {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	max-width: 1400px;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 13px;
+
 }
 
 .copyright {
-	padding-left: 100px;
 }
 
 .buttons {
@@ -341,4 +457,60 @@ h1, h2 {
 .social a {
 	margin-right: 15px;
 	/*background-color: rgb(114,156,198);*/
+}
+
+
+@media screen and (max-width: 750px) {
+	
+	.nav {
+		display: none;
+	}
+
+	.how-line {
+		display: none;
+
+	}
+
+	.prices {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.how {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+	h1, h2, h3 {
+		font-size: 23px;
+		letter-spacing: 2px;
+	}
+
+	.beta h2 {
+		font-size: 55px;
+		letter-spacing: 4px;
+	}
+
+	.form {
+		flex-direction: column;
+		justify-content: left;
+	}
+
+	.form button {
+	margin-top: 20px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+	
+	
+
+
 }
