@@ -120,26 +120,26 @@ a {
 	width: 100%;
 	max-width: 1560px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 
 }
 
 .bird {
-	margin: 0 auto;
 	margin-right: -7.5%;
 	z-index: 30;
 }
 
 .bird img {
-	height: 100%;
+	height: 47vh;
 }
 
 .macbook {
-	z-index: 10;
+	margin-right: 0;
+	z-index: 5;
 }
 
 .macbook img {
-	height: 105.5%;
+	height: 49.5vh;
 }
 
 h1, h2 {
@@ -672,13 +672,6 @@ h1, h2 {
 		height: 100%;
 	}
 
-	.macbook {
-		display: flex;
-		
-	}
-
-	.macbook img {
-	}
 
 	.tarif {
 	width: 226px;
@@ -789,23 +782,19 @@ h1, h2 {
 		margin: 0 auto;
 		margin-right: -35%;
 	}
-	.macbook {
-		display: flex;
-		
-	}
-
-
 
 
 }
 
 @media screen and (max-width: 850px) {
 	.bird {
-		margin: 0 auto;
-		margin-right: -48%;
+		margin: 0 0;
+		margin-right: -85%;
 	}
-	.macbook {
-		display: flex;
+	.macbook img{
+		margin-left: 200px;
+		width: 840px;
+		height: auto;
 	}
 }
 
@@ -813,9 +802,6 @@ h1, h2 {
 	.bird {
 		margin: 0 0;
 		margin-right: -75%;
-	}
-	.macbook {
-		display: flex;
 	}
 	.macbook img{
 		margin-left: 200px;
@@ -1024,6 +1010,7 @@ h1, h2 {
 	.first-screen {
 		height: auto;
 	}
+
 }
 
 
