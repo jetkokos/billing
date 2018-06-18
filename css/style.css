@@ -85,6 +85,10 @@ a {
 	align-items: center;
 }
 
+.nav-itm:hover {
+	color: #69e1d8;
+}
+
 .main { 
 	width: 100%;
 	max-width: 1400px;
@@ -316,7 +320,7 @@ h1, h2 {
 }
 
 .prices h2 {
-	margin: 140px 0 ;
+	margin: 140px 0 80px ;
 	padding: 0;
 	width: 100%;
 	text-align: center;
@@ -555,6 +559,40 @@ h1, h2 {
   animation-duration: 1.5s;
 }
 
+.fadeIn1 {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.fadeIn2 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.fadeIn3 {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.zoomIn1 {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+}
+
+.zoomIn2 {
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+
+.zoomIn3 {
+  animation-name: zoomIn;
+  animation-duration: 3s;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
 
 
 @keyframes fadeInUp {
@@ -569,8 +607,38 @@ h1, h2 {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 
 
