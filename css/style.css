@@ -542,6 +542,39 @@ h1, h2 {
 	}
 
 
+.fadeInUp1 {
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+}
+.fadeInUp2 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+.fadeInUp3 {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 749px) {
 	
 	.nav {
@@ -604,7 +637,6 @@ h1, h2 {
 @media screen and (max-width: 1540px) {
 	.clouds{
 	margin-left: -10%;
-	transition: all 500ms linear;
 	}
 }
 
@@ -993,4 +1025,7 @@ h1, h2 {
 		height: auto;
 	}
 }
+
+
+
 
