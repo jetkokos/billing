@@ -42,7 +42,7 @@
 		<div class="how">
 			<a id="how"></a>
 			<img class="how-line wow fadeInLeft" src="img/how_line.png" alt="line">
-			<h2>HOW IT WORKS</h2>
+			<h2>HOW IT&nbsp;<span class="black">WORKS</span></h2>
 			<div class="steps ">
 				<img class="wow zoomIn1" src="img/register.png" alt="Register">
 				<p class="wow fadeInUp2">Register</p>
@@ -60,7 +60,7 @@
 		</div>	
 		<div class="prices">
 			<a id="price"></a>
-			<h2>WHAT'S ABOUT PRICES</h2>
+			<h2>WHAT'S ABOUT&nbsp;<span class="black">PRICES</span></h2>
 			<div class="tarif wow fadeIn1">
 				<p><span class="bold">50$</span>/month</p>
 				<p>Billed as 48 &#8364/year</p>
@@ -77,7 +77,7 @@
 				<p><span class="bold">contract<span class="bold"></p>
 				<p><span>Contact us if you&nbsp;</span><span>need more</span></p>
 				<p class="lines contract"><span>more then&nbsp;</span><span>25 service</span></p>
-				<a class="button" href="#">CONTACT US</a>
+				<a class="button" href="#contact">CONTACT US</a>
 			</div>
 		</div>
 		<div class="beta">
@@ -103,8 +103,8 @@
 				<p> 2017 Copyright. Lorem Ipsum dolor sit ametcon</p>
 			</div>
 			<div class="buttons">
-				<a href="#" class="buttons-itm">Suport</a>
-				<a href="#" class="buttons-itm">Contact Us</a>
+				<a href="#" class="buttons-itm">Support</a>
+				<a href="#contact" class="buttons-itm">Contact Us</a>
 				<a href="#" class="buttons-itm">Disclaimer</a>
 				<a href="#" class="buttons-itm">Add more</a>
 			</div>
@@ -115,7 +115,19 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/animation.js"></script>
+<div id="win">
+	<div class="overlay"></div>
+	<div class="popup">
+		<p>leave your email and when we will give you early access to the service</p>
+			<form class="form wow fadeInUp3">
+				<input type="text" placeholder="e-mail">
+				<button class="button button-gradient">try beta</button>
+			</form>		
+		<button type="button" onClick="getElementById('win').style.display='none';">закрыть</button>
+	</div>
+</div>
+	<script src="js/wow.js"></script>
+	<script>new WOW().init();</script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 	
