@@ -138,7 +138,7 @@ a {
 
 .bird {
 	margin-right: -7.5%;
-	z-index: 30;
+	z-index: 10;
 }
 
 .bird img {
@@ -663,7 +663,98 @@ h1, h2 {
 }
 
 
+/*Popup*/
+.overlay {
+	background-color: #000000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	opacity: .5;
+}
+.popup-container {
+	background: #141636;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	z-index: 100;
+	width: 590px;
+	height: 370px;
+	padding: 0px;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
 
+.popup-container p {
+	margin: 60px 0 40px 0;
+	text-align: center;
+	width: 55%;
+	font-family: "Lato semibold";
+}
+
+.popup-container form {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.popup-container input {
+	width: 357px;
+	height: 55px;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	padding-left: 25px;
+}
+
+.popup-container button {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	width: 357px;
+	height: 57px;
+}
+/*
+#popup-success {
+	visibility: hidden;
+}
+*/
+#popup-success .popup-container{
+	z-index: 200;
+	font-size: 25px;
+	justify-content: center;
+}
+
+#close {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 4%;
+	right: 2%;
+	font-size: 30px;
+	background: none;
+	border: none;
+	outline: none;
+	width: 30px;
+	height: 30px;
+	color: #6ce7d6;
+}
+
+#close:hover{
+	cursor: pointer;
+}
+
+.invisible {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 749px) {
 	
@@ -805,7 +896,6 @@ h1, h2 {
 	}
 
 	.prices div:nth-child(5) p:nth-child(2)  {
-		border: 1px solid red;
 		width: 90%;
 		line-height: 27px;
 	}
@@ -997,7 +1087,18 @@ h1, h2 {
 		display: none;
 	}
 
-	
+	.how h2 {
+		font-size: 27px;
+	}
+
+	.prices h2 {
+		font-size: 27px;
+	}
+
+	.black {
+		padding-top: 5px;
+	}
+
 	.prices div p:nth-child(3) {
 		line-height: 27px;
 	}
@@ -1098,6 +1199,18 @@ h1, h2 {
 
 	.social{
 	margin: 10px;
+	}
+
+	.popup-container{
+		width: 300px;
+	}
+
+	.popup-container input {
+		width: 200px;
+	}
+
+	.popup-container .form button {
+		width: 200px;
 	}
 
 

@@ -24,7 +24,7 @@
 					<p class="fadeInUp2">from all the services you use</p>
 					<p class="fadeInUp2">We're about to launch into beta</p>
 					<div class="button-container fadeInUp3">
-						<a class="button button-gradient" href="#">try beta</a>
+						<a class="button button-gradient" href="#" onclick="showHidePopup()">try beta</a>
 						<a class="button" href="#how">learn more</a>
 					</div>
 				</div>
@@ -65,13 +65,13 @@
 				<p><span class="bold">50$</span>/month</p>
 				<p>Billed as 48 &#8364/year</p>
 				<p class="lines">10 service</p>
-				<a class="button" href="#">TRY BETA</a>
+				<a class="button" href="#contact">TRY BETA</a>
 			</div>
 			<div class="tarif wow fadeIn2">
 				<p><span class="bold">100$</span>/month</p>
 				<p>Billed as 1200 &#8364/year</p>
 				<p class="lines">25 service</p>
-				<a class="button" href="#">TRY BETA</a>
+				<a class="button" href="#contact" >TRY BETA</a>
 			</div>
 			<div class="tarif wow fadeIn3">
 				<p><span class="bold">contract<span class="bold"></p>
@@ -88,7 +88,7 @@
 				<p class="wow fadeInUp2"><span>leave your email and we will give </span><span>you early access to the service</span></p>
 				<form class="form wow fadeInUp3">
 					<input type="text" placeholder="e-mail">
-					<button class="button button-gradient">try beta</button>
+					<button class="button button-gradient" onclick="showHidePopupSuccess()">try beta</button>
 				</form>
 				<div class="bird2">
 					<img src="img/bird2.png" alt="bird2">
@@ -115,20 +115,27 @@
 			</div>
 		</div>
 	</footer>
-<div id="win">
-	<div class="overlay"></div>
-	<div class="popup">
-		<p>leave your email and when we will give you early access to the service</p>
-			<form class="form wow fadeInUp3">
+	<div id="popup" class="invisible">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button id="close" onclick="showHidePopup()">&times;</button>
+			<p>leave your email and when we will give you early access to the service</p>
+			<form class="form">
 				<input type="text" placeholder="e-mail">
-				<button class="button button-gradient">try beta</button>
+				<button class="button button-gradient" onclick="showHidePopupSuccess()">try beta</button>
 			</form>		
-		<button type="button" onClick="getElementById('win').style.display='none';">закрыть</button>
+		</div>
 	</div>
-</div>
+	<div id="popup-success" class="invisible">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button id="close" onclick="hidePopup(); hidePopupSuccess()">&times;</button>
+			<p>Your application is accepted, please wait for the operator's response</p>
+		</div>
+	</div>
 	<script src="js/wow.js"></script>
-	<script>new WOW().init();</script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 	
 </html>
