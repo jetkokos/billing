@@ -20,7 +20,12 @@ body {
 	overflow-x: hidden;
 }
 
-
+.load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 
 .main-container {
 	background-position: top 100% center;
@@ -320,7 +325,7 @@ h1, h2 {
 }
 
 .prices h2 {
-	margin: 140px 0 80px ;
+	margin: 140px 0 50px ;
 	padding: 0;
 	width: 100%;
 	text-align: center;
@@ -342,22 +347,32 @@ h1, h2 {
 	text-align: center;
 }
 
-.prices div:nth-child(2) p:first-child  {
+.prices div:nth-child(3) p:first-child  {
 	color: rgb(6,187,247);
 }
 
-.prices div:nth-child(3) p:first-child  {
+.prices div:nth-child(4) p:first-child  {
 	color: rgb(123,81,205);
 }
 
-.prices div:nth-child(4) p:first-child  {
+.prices div:nth-child(5) p:first-child  {
 	color: rgb(63,37,206);
 }
+
 
 .prices div p:nth-child(3) {
 	font-weight: 800;
 }
 
+.lines {
+	width: 90%;
+	line-height: 55px;
+	border-top: 2px solid #cdd9e5;
+	border-bottom: 2px solid #cdd9e5;
+	height: 55px;
+	margin: 0;
+	padding: 0;
+}
 
 
 .tarif {
@@ -378,9 +393,10 @@ h1, h2 {
 }
 
 .prices .button {
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 17px;
+	margin-bottom: 30px;
 	width: 115px;
+	height: 34px;
 	border-radius: 16px;
 	background-color: #ffffff;
 	border: 1.5px solid #1c2999;
@@ -396,7 +412,8 @@ h1, h2 {
 }
 
 .prices .button:hover {
-	text-decoration: underline;
+	color: #ffffff;
+	background-color: #0004ca;
 }
 
 .beta {
@@ -770,16 +787,22 @@ h1, h2 {
 		line-height: 55px;
 	}
 	
-	.prices div:nth-child(4) p:nth-child(3) {
+	.prices div:nth-child(5) p:nth-child(3) {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: middle;
-		line-height: 27px;
+		line-height: 55px;
 	}
 
 	.prices div p:nth-child(2) {
 		line-height: 55px;
+	}
+
+	.prices div:nth-child(5) p:nth-child(2)  {
+		border: 1px solid red;
+		width: 90%;
+		line-height: 27px;
 	}
 	
 	.prices div:nth-child(4) p:nth-child(2) {
@@ -787,8 +810,9 @@ h1, h2 {
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: middle;
-		line-height: 27px;
+		line-height: 55px;
 	}
+
 
 	.form {
 		flex-direction: column;

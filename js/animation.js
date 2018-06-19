@@ -515,3 +515,9 @@
 
 
 new WOW().init();
+
+$("window").load(function() {
+  $("body").removeAttr("id");
+});
+
+
