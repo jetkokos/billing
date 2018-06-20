@@ -12,9 +12,9 @@
 			<div class="header">
 				<a href="#" class="logo"><img src="img/logo.png"></a>
 				<nav class="nav">
-					<a href="#how" class="nav-itm">About</a>
-					<a href="#price" class="nav-itm">Price</a>
-					<a href="#contact" class="nav-itm">Contact Us</a>
+					<a href="#navhow" class="nav-itm">About</a> 
+					<a href="#navprice" class="nav-itm">Price</a>
+					<a href="#navcontact" class="nav-itm">Contact Us</a>
 				</nav>
 			</div>
 			<div class="main">
@@ -24,8 +24,8 @@
 					<p class="fadeInUp2">from all the services you use</p>
 					<p class="fadeInUp2">We're about to launch into beta</p>
 					<div class="button-container fadeInUp3">
-						<a class="button button-gradient" href="#" onclick="showHidePopup()">try beta</a>
-						<a class="button" href="#how">learn more</a>
+						<a href="#" class="button button-gradient" onclick="showPopup()">try beta</a>
+						<a class="button" href="#navhow">learn more</a>
 					</div>
 				</div>
 				<div class="clouds"></div>
@@ -39,8 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="how">
-			<a id="how"></a>
+		<div id="navhow" class="how">
 			<img class="how-line wow fadeInLeft" src="img/how_line.png" alt="line">
 			<h2>HOW IT&nbsp;<span class="black">WORKS</span></h2>
 			<div class="steps ">
@@ -58,37 +57,35 @@
 				<p class="wow fadeInUp3">of expenses</p>
 			</div>
 		</div>	
-		<div class="prices">
-			<a id="price"></a>
+		<div id="navprice" class="prices">
 			<h2>WHAT'S ABOUT&nbsp;<span class="black">PRICES</span></h2>
 			<div class="tarif wow fadeIn1">
 				<p><span class="bold">50$</span>/month</p>
 				<p>Billed as 48 &#8364/year</p>
 				<p class="lines">10 service</p>
-				<a class="button" href="#contact">TRY BETA</a>
+				<a class="button" href="#navcontact">TRY BETA</a>
 			</div>
 			<div class="tarif wow fadeIn2">
 				<p><span class="bold">100$</span>/month</p>
 				<p>Billed as 1200 &#8364/year</p>
 				<p class="lines">25 service</p>
-				<a class="button" href="#contact" >TRY BETA</a>
+				<a class="button" href="#navcontact" >TRY BETA</a>
 			</div>
 			<div class="tarif wow fadeIn3">
 				<p><span class="bold">contract<span class="bold"></p>
 				<p><span>Contact us if you&nbsp;</span><span>need more</span></p>
 				<p class="lines contract"><span>more then&nbsp;</span><span>25 service</span></p>
-				<a class="button" href="#contact">CONTACT US</a>
+				<a class="button" href="#navcontact">CONTACT US</a>
 			</div>
 		</div>
-		<div class="beta">
-			<a id="contact"></a>
+		<div id="navcontact" class="beta">
 			<div class="beta-wrapper">
 				<h2 class="wow fadeInUp1">we are launching in</h2>	
 				<h2 class="wow fadeInUp1">beta very soon</h2>
 				<p class="wow fadeInUp2"><span>leave your email and we will give </span><span>you early access to the service</span></p>
 				<form class="form wow fadeInUp3">
 					<input type="text" placeholder="e-mail">
-					<button class="button button-gradient" onclick="showHidePopupSuccess()">try beta</button>
+					<button href="#" class="button button-gradient" onclick="showPopupSuccess()">try beta</button>
 				</form>
 				<div class="bird2">
 					<img src="img/bird2.png" alt="bird2">
@@ -111,27 +108,24 @@
 			</div>
 		</div>
 	</footer>
-	<div id="popup" class="invisible">
+	<div class="popup">
 		<div class="overlay"></div>
 		<div class="popup-container">
-			<button id="close" onclick="showHidePopup()">&times;</button>
+			<button href="#" id="close" onclick="hidePopup()">&times;</button>
 			<p>leave your email and when we will give you early access to the service</p>
 			<form class="form">
 				<input type="text" placeholder="e-mail">
-				<button class="button button-gradient" onclick="showHidePopupSuccess()">try beta</button>
+				<button href="#" class="button button-gradient" onclick="hidePopup(); showPopupSuccess()">try beta</button>
 			</form>		
 		</div>
 	</div>
-	<div id="popup-success" class="invisible">
-		<div class="overlay"></div>
+	<div class="popup-success">
 		<div class="popup-container">
-			<button id="close" onclick="hidePopup(); hidePopupSuccess()">&times;</button>
+			<button href="#" id="close" onclick="hidePopupSuccess()">&times;</button>
 			<p>Your application is accepted, please wait for the operator's response</p>
 		</div>
 	</div>
-	<script src="js/wow.js"></script>
 	<script src="js/script.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/wow.js"></script>
 </body>
-	
 </html>

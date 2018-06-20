@@ -26,7 +26,7 @@ body {
 
 .black {
 	font-family: "Lato Black";
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }
 
 .main-container {
@@ -160,8 +160,12 @@ h1, h2 {
 	font-size: 55px;
 	line-height: 55px;
 	color: rgb(255,255,255);
-	font-family: "Lato";
+	font-family: "Lato Regular";
 	font-weight: 800;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 
 
@@ -528,8 +532,6 @@ h1, h2 {
 
 }
 
-.copyright {
-}
 
 .buttons {
 	padding: 7px;
@@ -664,6 +666,20 @@ h1, h2 {
 
 
 /*Popup*/
+.popup {
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	opacity: 0;
+	transition: opacity 1s ease 0s;
+}
+
+
+
 .overlay {
 	background-color: #000000;
 	position: fixed;
@@ -671,8 +687,7 @@ h1, h2 {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 50;
-	opacity: .5;
+	opacity: 0.5;
 }
 .popup-container {
 	background: #141636;
@@ -681,7 +696,6 @@ h1, h2 {
 	top: 50%;
 	transform: translate(-50%,-50%);
 	overflow: hidden;
-	z-index: 100;
 	width: 590px;
 	height: 370px;
 	padding: 0px;
@@ -722,14 +736,22 @@ h1, h2 {
 	width: 357px;
 	height: 57px;
 }
-/*
-#popup-success {
+
+.popup-success {
 	visibility: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	opacity: 0;
+	transition: opacity 300ms ease 0s;
+	
 }
-*/
-#popup-success .popup-container{
-	z-index: 200;
-	font-size: 25px;
+
+.popup-success>.popup-container {
+	font-size: 24px;
 	justify-content: center;
 }
 
@@ -752,9 +774,12 @@ h1, h2 {
 	cursor: pointer;
 }
 
-.invisible {
-  visibility: hidden;
+.visible {
+	z-index: 100;
+	opacity: 1;
+	visibility: visible;
 }
+
 
 @media screen and (max-width: 749px) {
 	
