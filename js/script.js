@@ -18,7 +18,7 @@ function hidePopupSuccess() {
 /*Плавный переход к якорям*/
 
 var linkNav = document.querySelectorAll('[href^="#nav"]'),
-    V = 0.2;  // скорость, может иметь дробное значение через точку
+    V = 0.5;  // скорость, может иметь дробное значение через точку
 for (var i = 0; i < linkNav.length; i++) {
   linkNav[i].addEventListener('click', function(e) {
     e.preventDefault();
