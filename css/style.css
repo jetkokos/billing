@@ -18,6 +18,14 @@ body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
+
+h3{
+	font-family: "Lato";
+	font-weight: 900;
+	color:#3f25ce;
+	font-size: 27px;
+	text-align: center;
+}
 .wow {
    visibility: hidden;
 }
@@ -25,6 +33,7 @@ body {
 	font-family: "Lato";
 	font-weight: 900;
 }
+
 .main-container {
 	background-position: top 100% center;
 	display: flex;
@@ -232,6 +241,275 @@ h1, h2 {
 	background-image: none;
 	background-color: #1b85df;
 }
+
+.addon {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 582px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #293282;
+	background: url(../img/bg2.png);
+	background-repeat: no-repeat;
+	background-position: 65% 100%;
+	background-size: cover;
+	text-transform: uppercase;
+}
+
+.addon-text {
+	margin-bottom: 60px;
+	max-width: 900px;
+	font-size: 27px;
+	line-height: 35px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Lato";
+}
+
+@media (max-width: 750px) {
+	.addon-text {
+		max-width: 650px;
+	}
+}
+
+@media (max-width: 320px) {
+	.addon {
+		height: 420px;
+	}
+	.addon-text {
+		max-width: 273px;
+		font-size: 17px;
+		line-height: 22px;
+	}
+}
+
+.addon-text p {
+	margin: 0;
+}
+
+.white {
+	color: rgb(255,255,255);
+	display: block;
+	flex-wrap: nowrap;
+}
+
+.blue {
+	margin-top: 5px;
+	color: #72eed4;
+	display: block;
+}
+
+.addon-icons {
+	height: 42px;
+	width: 288px;
+	background: url('../img/addon-icon.png') no-repeat transparent;
+}
+
+.problem {
+	width: 100%;
+}
+
+.problem h2 {
+	padding-left: 15px;
+	margin: 80px 0 80px ;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.problem h3 {
+	padding-left: 5%;
+}
+.problem-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.problem-text p {
+	padding-left: 5%;
+	max-width: 500px;
+	font-family: "Lato";
+	font-size: 17px;
+	color: #495667;
+	text-align: center;
+}
+
+.problem-pic {
+	margin: 50px 0 50px;
+}
+
+.bg-grey {
+	background-color: #f1f1f6;
+}
+
+@media (max-width: 749px) {
+	.problem-pic img {
+		width: 318px;
+	}
+	.problem-text {
+		max-width: 265px;
+		font-size: 15px;
+	}
+
+	.problem h2 {
+	font-size: 23px;
+	margin: 40px 0 20px;
+	}
+
+	.problem h3 {
+	font-size: 17px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.problem-container{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.problem-text p, h3 {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.problem-pic {
+		margin-left: 0px;
+	}
+
+	.order-2 {
+		order: 2;
+		padding-right: 100px;
+	}
+
+	.order-1 {
+		order: 1;
+
+	}
+
+	.problem-wrapper {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-width: 1400px;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	justify-content: space-between;
+	}
+}
+
+.solver {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.solver h2 {
+	margin: 80px 0 70px 0;
+	padding: 0;
+	max-width: 500px;
+	text-align: left;
+	color: #000000;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	text-transform: uppercase;
+}
+
+
+.solver-text p {
+	max-width: 560px;
+	font-family: "Lato";
+	font-size: 17px;
+	line-height: 23px;
+	color: #495667;
+	text-align: left;
+}
+
+.solver-wrapper {
+	margin-bottom: 70px;
+	display: flex;
+	align-items: center;
+}
+
+.solver-icon {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.solver-icon img[src*="img/smartphone.png"] {
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.solver-bird {
+	margin: 0 auto 50px;
+
+}
+
+@media (max-width: 749px) {
+	.solver-wrapper {
+	margin-bottom: 70px;
+	}
+	.solver h2 {
+		margin: 40px 0 20px 0;
+		max-width: 210px;
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.solver-bird img {
+		width: 270px;
+	}
+	.solver-text p{
+		max-width: 200px;
+		font-size: 13px;
+	}
+
+}
+
+@media (min-width: 1300px) {
+	.solver {
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.solver-wrapper {
+		margin-bottom: 50px;
+	}
+
+	.solver-block-text{
+		margin-left: 0;
+		margin-right: 10%;
+	}
+	.solver-bird {
+		margin: 0;
+		margin-bottom: 50px;
+	}
+	.solver-bird img {
+		width: 900px;
+	}
+}
+
+
+
+
+
+
+
+
 .how {
 	width: 100%;
 	background-color: #141636;
@@ -523,6 +801,14 @@ h1, h2 {
   animation-name: fadeInLeft;
   animation-duration: 1s;
 }
+.fadeInLeft2 {
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
+}
+.fadeInRight{
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+}
 
 @keyframes fadeInUp {
   from {
@@ -554,7 +840,17 @@ h1, h2 {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
   }
   to {
     opacity: 1;
@@ -1040,19 +1336,14 @@ h1, h2 {
 
 @media screen and (max-width: 320px) {
 	.pics {
-		border: 2px solid red;
 		height: 300px;
 		flex-direction: column;
 	}
 	.bird img{
-		border: 2px solid yellow;
 		width: 265px;
 		height: 300px;
 	}
 
-	.how{
-		border: 2px solid green;
-	}
 
 	.form input {
 		padding: 0;
