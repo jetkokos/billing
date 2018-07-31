@@ -47,8 +47,6 @@ h3 {
 
 .first-screen {
 	width: 100%;
-	/*width: 100vw;*/
-	/*height: 100vh;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1345,7 +1343,7 @@ h2 {
 	.bird {
 		display: flex;
 		align-self: center;
-		height: 99%;
+		/*height: 99%;*/
 		margin: 0 auto;
 	}
 	.logo img {
@@ -1385,6 +1383,7 @@ h2 {
 		line-height: 23px;
 		font-family: "Lato";
 		flex-wrap: wrap;
+		max-width: 275px;
 	}
 	.main p:nth-child(4) {
 		font-size: 17px;
@@ -1546,6 +1545,9 @@ h2 {
 }
 
 @media screen and (max-width: 749px) {
+	.first-screen {
+		height: 870px;
+	}
 	.bird img {
 		width: 265px;
 		height: 300px;
