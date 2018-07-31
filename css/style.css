@@ -307,7 +307,7 @@ h2 {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 749px) {
 	.addon {
 		height: 420px;
 	}
@@ -369,8 +369,6 @@ h2 {
 	align-items: center;
 }
 
-
-
 .problem-text p {
 
 	margin: 0 auto;
@@ -393,6 +391,18 @@ h2 {
 	.problem-pic img {
 		width: 318px;
 	}
+
+		.problem-wrapper {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 13px;
+		justify-content: space-between;
+	}
+
 	.problem-text {
 		max-width: 265px;
 		font-size: 15px;
@@ -649,7 +659,7 @@ h2 {
 }
 
 .prices h2 {
-	margin: 140px 0 50px;
+	margin: 50px 0 50px;
 	padding: 0;
 	width: 100%;
 	text-align: center;
@@ -671,15 +681,15 @@ h2 {
 	text-align: center;
 }
 
-.prices div:nth-child(3) p:first-child {
+.prices div:nth-child(2) p:first-child {
 	color: rgb(6, 187, 247);
 }
 
-.prices div:nth-child(4) p:first-child {
+.prices div:nth-child(3) p:first-child {
 	color: rgb(123, 81, 205);
 }
 
-.prices div:nth-child(5) p:first-child {
+.prices div:nth-child(4) p:first-child {
 	color: rgb(63, 37, 206);
 }
 
@@ -1319,7 +1329,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 749px) {
 	.header {
 		height: 100px;
 		justify-content: center;
@@ -1396,13 +1406,22 @@ h2 {
 		display: none;
 	}
 	.how h2 {
+		margin-top: 55px;
+		margin-bottom: 85px;
 		font-size: 27px;
 	}
+	.steps p:last-child {
+	    margin-bottom: 30px;
+	}
+	.steps:last-child p:last-child {
+		margin-bottom: 55px;
+	}
+	
 	.prices h2 {
 		font-size: 27px;
 	}
 	.black {
-		padding-top: 5px;
+		padding-top: 0px;
 	}
 	.prices div p:nth-child(3) {
 		line-height: 55px;
@@ -1506,16 +1525,13 @@ h2 {
 	}
 }
 
+
+
 @media screen and (max-width: 320px) {
 	.pics {
 		height: 300px;
 		flex-direction: column;
 	}
-	.bird img {
-		width: 265px;
-		height: 300px;
-	}
-
 
 	.form input {
 		padding: 0;
@@ -1527,8 +1543,18 @@ h2 {
 		text-align: center;
 		margin: 7px 0;
 	}
+}
+
+@media screen and (max-width: 749px) {
+	.bird img {
+		width: 265px;
+		height: 300px;
+	}
 	.tarif {
-		margin-bottom: 20px;
+		margin: 0 6px 20px 6px;
+	}
+	.prices {
+		margin-bottom: 60px;
 	}
 }
 
